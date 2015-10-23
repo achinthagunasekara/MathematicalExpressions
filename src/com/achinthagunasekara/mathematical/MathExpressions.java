@@ -1,6 +1,11 @@
 package com.achinthagunasekara.mathematical;
 
 import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.script.ScriptEngine;
+import javax.script.ScriptEngineManager;
+import javax.script.ScriptException;
 
 /**
  *
@@ -18,12 +23,25 @@ public class MathExpressions {
         history = new ArrayList<>();
     }
     
-    public double evaluate(String expression) {
+    private String evaluateToString(String expression) throws ScriptException {
         
-        double solution = 0;
-        //calculate logic
         history.add(expression);
-        return solution;
+        ScriptEngineManager mgr = new ScriptEngineManager();
+        ScriptEngine engine = mgr.getEngineByName("JavaScript");
+        return engine.eval(expression).toString();
+    }
+    
+    public Double evaluate(String expression) throws BadMathematicalExpressionException {
+        
+        try {
+            
+            return Double.parseDouble(evaluateToString(expression));
+        }
+        catch (ScriptException ex) {
+            
+            Logger.getLogger(MathExpressions.class.getName()).log(Level.SEVERE, null, ex);
+            throw new BadMathematicalExpressionException("Unable to evaluate the expression - " + expression + ". Info: " + ex.toString());
+        }
     }
     
     public ArrayList<String> getHistory() {
