@@ -16,7 +16,7 @@ import javax.script.ScriptException;
 
 public class MathExpressions {
     
-    private final ArrayList<String> history;
+    private ArrayList<String> history;
     
     public MathExpressions() {
     
@@ -47,5 +47,15 @@ public class MathExpressions {
     public ArrayList<String> getHistory() {
         
         return this.history;
+    }
+    
+    public String getHistory(int itemNumber) {
+        
+        return history.get(itemNumber - 1);
+    }
+    
+    public void clearHistory() {
+        
+        history = new ArrayList();
     }
 }
