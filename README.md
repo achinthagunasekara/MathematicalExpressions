@@ -2,25 +2,25 @@
 
 Import the library into your Java application
 
-''Java
+```Java
 import com.achinthagunasekara.mathematical.MathExpressions;
-''
+```
 
 You can create a new instance of MathExpressions object by
 
-''java
+```java
 MathExpressions me = new MathExpressions();
-''
+```
 
 To evaluate a string mathematical expression,
 
-''java
+```java
 System.out.println(me.evaluate("3*4));
 System.out.println(me.evaluate("4+5));
-''
+```
 
 To get a history of previous mathematical expressions,
 
-''java
+```java
 me.getHistory(); //returns a ArrayList<String> with past expressions
-''
+```
