@@ -15,8 +15,8 @@ MathExpressions me = new MathExpressions();
 To evaluate a string mathematical expression,
 
 ```java
-System.out.println(me.evaluate("3*4));
-System.out.println(me.evaluate("4+5));
+System.out.println(me.evaluate("3*4"));
+System.out.println(me.evaluate("4+5"));
 ```
 
 To get a history of previous mathematical expressions,
