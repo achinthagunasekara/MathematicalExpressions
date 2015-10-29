@@ -61,16 +61,16 @@ public class MathExpressions {
     
     public void historyToString() {
         
-        for(String s: history) {
+        history.stream().forEach((s) -> {
             
             System.out.println(s);
-        }
+        });
     }
     
     public void historyAndSolutionsToString() {
         
-        for(String s: history) {
-
+        history.stream().forEach((s) -> {
+            
             try {
                 
                 System.out.println(s + " = " + this.evaluate(s));
@@ -79,6 +79,6 @@ public class MathExpressions {
                 
                 System.out.println(s + " = BadMathematicalExpressionException");
             }
-        }
+        });
     }
 }
