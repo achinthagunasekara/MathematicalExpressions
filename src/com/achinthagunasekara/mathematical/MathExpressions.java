@@ -67,7 +67,7 @@ public class MathExpressions {
         }
     }
     
-    public void historyAndSolutionsToString() {
+    public void historyAndSolutionsToString() throws BadMathematicalExpressionException {
         
         for(String s: history) {
             
