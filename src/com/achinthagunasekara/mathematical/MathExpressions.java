@@ -66,4 +66,9 @@ public class MathExpressions {
             System.out.println(s);
         }
     }
+    
+    public void historyAndSolutionsToString() {
+        
+        //implementation
+    }
 }
