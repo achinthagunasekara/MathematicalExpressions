@@ -61,6 +61,9 @@ public class MathExpressions {
     
     public void historyToString() {
         
-        //implementation
+        for(String s: history) {
+            
+            System.out.println(s);
+        }
     }
 }
