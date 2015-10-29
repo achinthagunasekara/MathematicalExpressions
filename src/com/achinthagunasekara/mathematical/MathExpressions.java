@@ -58,4 +58,9 @@ public class MathExpressions {
         
         history = new ArrayList();
     }
+    
+    public void historyToString() {
+        
+        //implementation
+    }
 }
