@@ -67,11 +67,18 @@ public class MathExpressions {
         }
     }
     
-    public void historyAndSolutionsToString() throws BadMathematicalExpressionException {
+    public void historyAndSolutionsToString() {
         
         for(String s: history) {
-            
-            System.out.println(s + "=>" + this.evaluate(s));
+
+            try {
+                
+                System.out.println(s + " = " + this.evaluate(s));
+            }
+            catch(BadMathematicalExpressionException badMEx) {
+                
+                System.out.println(s + " = BadMathematicalExpressionException");
+            }
         }
     }
 }
