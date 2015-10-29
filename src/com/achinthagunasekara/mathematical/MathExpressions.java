@@ -69,6 +69,9 @@ public class MathExpressions {
     
     public void historyAndSolutionsToString() {
         
-        //implementation
+        for(String s: history) {
+            
+            System.out.println(s + "=>" + this.evaluate(s));
+        }
     }
 }
