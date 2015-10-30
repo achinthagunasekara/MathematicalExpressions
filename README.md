@@ -49,7 +49,7 @@ To clear history,
 me.clearHistory(); //returns a String with # 3 expressions
 ```
 
-##Printting
+##Printing
 
 To print history of input mathematical expressions,
 
