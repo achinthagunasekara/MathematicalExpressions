@@ -4,7 +4,9 @@ This is a smiple Java library that can be used to solve mathematical expressions
 
 For bad expressions that can't be solved, the library will throw
 
-src.com.achinthagunasekara.mathematical.
+```java
+src.com.achinthagunasekara.mathematical.BadMathematicalExpressionException
+```
 
 ##Import the library into your Java application
 
