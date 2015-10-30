@@ -1,5 +1,7 @@
 #Java Library to Evaluate String Mathematical Expressions
 
+This is a smiple Java library that can be used to solve mathematical expressions. You can input your mathematical expressions as a string variable and this library convert them to mathematical expressions and solves them.
+
 ##Import the library into your Java application
 
 ```Java
