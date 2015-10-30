@@ -41,10 +41,16 @@ To clear history,
 me.clearHistory(); //returns a String with # 3 expressions
 ```
 
-Printting
+##Printting
 
 To print history of input mathematical expressions,
 
+```java
+printHistory(); //prints history on  screen
+```
+
 To print history and solutions to input mathematical expressions
 
-printHistoryAndSolutions
+```java
+printHistoryAndSolutions(); //prints history and solutuins on  screen
+```
