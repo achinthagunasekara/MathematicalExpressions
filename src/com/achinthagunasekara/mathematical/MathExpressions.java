@@ -67,7 +67,7 @@ public class MathExpressions {
         });
     }
     
-    public void historyAndSolutionsToString() {
+    public void printHistoryAndSolutions() {
         
         history.stream().forEach((s) -> {
             
