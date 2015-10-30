@@ -1,6 +1,6 @@
-##Java Library to Evaluate String Mathematical Expressions
+#Java Library to Evaluate String Mathematical Expressions
 
-Import the library into your Java application
+##Import the library into your Java application
 
 ```Java
 import com.achinthagunasekara.mathematical.MathExpressions;
