@@ -59,7 +59,7 @@ public class MathExpressions {
         history = new ArrayList();
     }
     
-    public void historyToString() {
+    public void printHistory() {
         
         history.stream().forEach((s) -> {
             
