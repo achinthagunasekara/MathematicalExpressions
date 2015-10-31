@@ -60,5 +60,5 @@ printHistory(); //prints history on  screen
 To print history and solutions to input mathematical expressions
 
 ```java
-printHistoryAndSolutions(); //prints history and solutuins on  screen
+printHistoryAndSolutions(); //prints history and solutuins on screen
 ```
