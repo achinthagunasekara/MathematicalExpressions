@@ -54,7 +54,7 @@ me.clearHistory(); //returns a String with # 3 expressions
 To print history of input mathematical expressions,
 
 ```java
-printHistory(); //prints history on  screen
+printHistory(); //prints history on screen
 ```
 
 To print history and solutions to input mathematical expressions
