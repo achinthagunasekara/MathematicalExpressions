@@ -17,8 +17,8 @@ import javax.script.ScriptException;
 public class MathExpressions {
     
     private ArrayList<String> history;
-    private ScriptEngineManager mgr;
-    private ScriptEngine engine;
+    private final ScriptEngineManager mgr;
+    private final ScriptEngine engine;
     
     public MathExpressions() {
     
@@ -53,17 +53,17 @@ public class MathExpressions {
     
     public String getHistory(int itemNumber) {
         
-        return history.get(itemNumber - 1);
+        return this.history.get(itemNumber - 1);
     }
     
     public void clearHistory() {
         
-        history = new ArrayList();
+        this.history = new ArrayList();
     }
     
     public void printHistory() {
         
-        history.stream().forEach((s) -> {
+        this.history.stream().forEach((s) -> {
             
             System.out.println(s);
         });
@@ -71,7 +71,7 @@ public class MathExpressions {
     
     public void printHistoryAndSolutions() {
         
-        history.stream().forEach((s) -> {
+        this.history.stream().forEach((s) -> {
             
             try {
                 
