@@ -77,7 +77,7 @@ public class MathExpressions {
             }
             catch(BadMathematicalExpressionException badMEx) {
                 
-                System.out.println(s + " = BadMathematicalExpressionException");
+                System.out.println(s + " = " + badMEx.getMessage());
             }
         });
     }
