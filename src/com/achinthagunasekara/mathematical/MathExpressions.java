@@ -17,6 +17,8 @@ import javax.script.ScriptException;
 public class MathExpressions {
     
     private ArrayList<String> history;
+    private ScriptEngineManager mgr;
+    private ScriptEngine engine;
     
     public MathExpressions() {
     
@@ -26,8 +28,8 @@ public class MathExpressions {
     private String evaluateToString(String expression) throws ScriptException {
         
         history.add(expression);
-        ScriptEngineManager mgr = new ScriptEngineManager();
-        ScriptEngine engine = mgr.getEngineByName("JavaScript");
+        mgr = new ScriptEngineManager();
+        engine = mgr.getEngineByName("JavaScript");
         return engine.eval(expression).toString();
     }
     
