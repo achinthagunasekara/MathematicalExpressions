@@ -39,10 +39,10 @@ public class MathExpressions {
             
             return Double.parseDouble(evaluateToString(expression));
         }
-        catch (ScriptException ex) {
+        catch (ScriptException scriptEx) {
             
-            Logger.getLogger(MathExpressions.class.getName()).log(Level.SEVERE, null, ex);
-            throw new BadMathematicalExpressionException("Unable to evaluate the expression - " + expression + ". Info: " + ex.toString());
+            Logger.getLogger(MathExpressions.class.getName()).log(Level.SEVERE, null, scriptEx);
+            throw new BadMathematicalExpressionException(scriptEx.getMessage(), expression);
         }
     }
     

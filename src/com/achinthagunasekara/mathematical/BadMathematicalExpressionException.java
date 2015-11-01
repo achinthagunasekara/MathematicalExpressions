@@ -8,8 +8,20 @@ package com.achinthagunasekara.mathematical;
  */
 public class BadMathematicalExpressionException extends Exception {
     
-    public BadMathematicalExpressionException(String error) {
+    //this variable to be used in the future
+    private final String error;
+    private final String expression;
+    
+    public BadMathematicalExpressionException(String error, String expression) {
         
-        super(error);
+        this.error = error;
+        this.expression = expression;
+    }
+    
+    @Override
+    public String toString() {
+        
+        String message = "Unable to evaluate the expression : " + this.expression;
+        return message;
     }
 }
