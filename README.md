@@ -40,13 +40,13 @@ me.getHistory(); //returns a ArrayList<String> with past expressions
 You can also get a specific past expression by entering a expression number
 
 ```java
-me.getHistory(3); //returns a String with # 3 expressions
+me.getHistory(3); //returns a String with # 3 expression
 ```
 
 To clear history,
 
 ```java
-me.clearHistory(); //returns a String with # 3 expressions
+me.clearHistory(); //clear all past expressions in the history
 ```
 
 ##Printing
