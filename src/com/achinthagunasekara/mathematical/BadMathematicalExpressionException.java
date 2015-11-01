@@ -2,7 +2,7 @@ package com.achinthagunasekara.mathematical;
 
 /**
  *
- * @author archieg
+ * @author Achintha Gunasekara
  * @data 2015.10.23
  * 
  */
