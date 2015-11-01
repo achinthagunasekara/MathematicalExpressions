@@ -22,15 +22,15 @@ public class MathExpressions {
     
     public MathExpressions() {
     
-        history = new ArrayList<>();
+        this.history = new ArrayList<>();
+        this.mgr = new ScriptEngineManager();
+        this.engine = mgr.getEngineByName("JavaScript");
     }
     
     private String evaluateToString(String expression) throws ScriptException {
         
-        history.add(expression);
-        mgr = new ScriptEngineManager();
-        engine = mgr.getEngineByName("JavaScript");
-        return engine.eval(expression).toString();
+        this.history.add(expression);
+        return this.engine.eval(expression).toString();
     }
     
     public Double evaluate(String expression) throws BadMathematicalExpressionException {
