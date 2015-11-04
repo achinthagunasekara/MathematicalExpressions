@@ -42,7 +42,7 @@ public class MathExpressions {
         catch (ScriptException scriptEx) {
             
             Logger.getLogger(MathExpressions.class.getName()).log(Level.SEVERE, null, scriptEx);
-            throw new BadMathematicalExpressionException(scriptEx.getMessage(), expression);
+            throw new BadMathematicalExpressionException(scriptEx, expression);
         }
     }
     
