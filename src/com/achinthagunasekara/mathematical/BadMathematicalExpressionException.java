@@ -22,7 +22,12 @@ public class BadMathematicalExpressionException extends Exception {
     @Override
     public String toString() {
         
-        String message = "Unable to evaluate the expression : " + this.expression + ". Info: " + this.error;
+        String message = "Unable to evaluate the expression : " + this.expression;
         return message;
+    }
+    
+    public String getErrorDetails() {
+        
+        return this.error;
     }
 }
