@@ -1,5 +1,7 @@
 package com.achinthagunasekara.mathematical;
 
+import javax.script.ScriptException;
+
 /**
  *
  * @author Achintha Gunasekara
@@ -8,14 +10,13 @@ package com.achinthagunasekara.mathematical;
  */
 public class BadMathematicalExpressionException extends Exception {
     
-    //this variable to be used in the future
-    private final String error;
+    private final ScriptException scriptEx;
     private final String expression;
     
-    public BadMathematicalExpressionException(String error, String expression) {
+    public BadMathematicalExpressionException(ScriptException scriptEx, String expression) {
         
-        super(error);
-        this.error = error;
+        super(scriptEx.getMessage());
+        this.scriptEx = scriptEx;
         this.expression = expression;
     }
     
@@ -28,6 +29,6 @@ public class BadMathematicalExpressionException extends Exception {
     
     public String getErrorDetails() {
         
-        return this.error;
+        return this.scriptEx.getMessage();
     }
 }
