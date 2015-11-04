@@ -13,7 +13,7 @@ public class BadMathematicalExpressionException extends Exception {
     private final String expression;
     
     public BadMathematicalExpressionException(String error, String expression) {
-        
+        super(error);
         this.error = error;
         this.expression = expression;
     }
