@@ -64,7 +64,7 @@ me.printHistoryAndSolutions(true); //prints history and solutuins on screen with
 ```
 
 ```java
-me.printHistoryAndSolutions(false); //prints history and solutuins on screen with full details of any errors.
+me.printHistoryAndSolutions(false); //prints history and solutuins on screen
 ```
 
 To print history and solutions to input mathematical expressions use the below function. It's a overloaded function and it'll call the ablove function with 'false' as parameter under the hood.
