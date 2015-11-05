@@ -71,6 +71,11 @@ public class MathExpressions {
     
     public void printHistoryAndSolutions() {
         
+        printHistoryAndSolutions(false);
+    }
+    
+    public void printHistoryAndSolutions(boolean printFullErrors) {
+        
         this.history.stream().forEach((s) -> {
             
             try {
@@ -79,7 +84,14 @@ public class MathExpressions {
             }
             catch(BadMathematicalExpressionException badMEx) {
                 
-                System.out.println(s + " = " + badMEx.getMessage());
+                if(printFullErrors) {
+                    
+                    System.out.println(s + " = " + badMEx.getMessage() + ". Info : " + badMEx.getErrorDetails());
+                }
+                else {
+                    
+                    System.out.println(s + " = " + badMEx.getMessage());
+                }
             }
         });
     }
