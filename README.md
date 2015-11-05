@@ -57,14 +57,18 @@ To print history of input mathematical expressions,
 me.printHistory(); //prints history on screen
 ```
 
-To print history and solutions to input mathematical expressions
-
-```java
-me.printHistoryAndSolutions(); //prints history and solutuins on screen
-```
-
-Below function is a overloaded function. You can call it with a boolean parameter called printFullErrors. This will print a stck trace for any errors.
+You can call below function with a boolean parameter called printFullErrors. This will print a stck trace for any errors if the passed in parameter is true. Otherwise it'll print minimal erros.
 
 ```java
 me.printHistoryAndSolutions(true); //prints history and solutuins on screen with full details of any errors.
+```
+
+```java
+me.printHistoryAndSolutions(false); //prints history and solutuins on screen with full details of any errors.
+```
+
+To print history and solutions to input mathematical expressions use the below function. It's a overloaded function and it'll call the ablove function with 'false' as parameter under the hood.
+
+```java
+me.printHistoryAndSolutions(); //prints history and solutuins on screen
 ```
