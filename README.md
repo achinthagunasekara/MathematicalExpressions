@@ -62,3 +62,5 @@ To print history and solutions to input mathematical expressions
 ```java
 printHistoryAndSolutions(); //prints history and solutuins on screen
 ```
+
+Above function is a overloaded function. You can call it with a boolean parameter called printFullErrors/
